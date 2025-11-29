@@ -1,0 +1,27 @@
+.input {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.openSidebarBtn {
+  width: 200px;
+  cursor: pointer;
+  margin: 0 auto;
+
+  padding: 8px 12px;
+  background: #3c7ddf;
+  color: #fff;
+
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+.openSidebarBtn:hover {
+  background-color: #166df0;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+}

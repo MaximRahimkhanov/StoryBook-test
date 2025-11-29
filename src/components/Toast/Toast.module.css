@@ -1,0 +1,42 @@
+.toast {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: Roboto, sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-left: 10px;
+}
+
+.toast.hide {
+  opacity: 0;
+}
+
+.closeBtn {
+  padding: 1;
+  border-radius: 10px;
+  border: transparent;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: ease-in-out 250ms;
+  cursor: pointer;
+}
+.closeBtn:hover {
+  background-color: rgb(211, 208, 208);
+}
+
+.error {
+  background-color: #fab5ae;
+}
+
+.success {
+  background-color: #9ff1c1;
+}
+
+.info {
+  background-color: #a9d8f7;
+}

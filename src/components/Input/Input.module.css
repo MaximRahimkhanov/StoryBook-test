@@ -1,0 +1,70 @@
+.wrapper {
+  width: 248px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: Roboto, sans-serif;
+}
+
+.labelRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 34px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.input {
+  width: 200px;
+  padding: 8px 36px 8px 10px;
+  border: 1px solid #999898;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  font-family: Roboto, sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+.input:placeholder-shown {
+  border-color: rgb(22, 189, 189);
+}
+
+.input:hover {
+  border-color: #7e98f8;
+  box-shadow: 0 0 8px rgba(107, 140, 255, 0.4);
+}
+
+.input:focus {
+  border-color: #6b8cff;
+  box-shadow: 0 0 0 3px rgba(107, 140, 255, 0.12);
+}
+
+.iconButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.iconCross {
+  color: #ee9292;
+}
+
+.icon {
+  color: #6b8cff;
+  border: none;
+}
+
+.inputError {
+  border-color: #f10707;
+  box-shadow: 0 0 8px rgba(185, 3, 3, 0.4);
+}
+
+.errorText {
+  color: #f0a0a0;
+  font-size: 12px;
+}
