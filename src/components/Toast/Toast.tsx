@@ -3,14 +3,14 @@ import css from './Toast.module.css';
 
 export interface ToastProps {
   message?: string;
-  onClose: () => void;
+  onClose?: () => void;
   duration?: number;
   type?: 'success' | 'error' | 'info';
 }
 
 const Toast: React.FC<ToastProps> = ({
   message,
-  onClose,
+  onClose = () => {},
   type = 'info',
   duration,
 }) => {
@@ -22,7 +22,7 @@ const Toast: React.FC<ToastProps> = ({
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      onClose?.();
+      onClose();
     }, duration);
     return () => clearTimeout(timer);
   }, [duration, onClose]);
