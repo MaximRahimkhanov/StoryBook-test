@@ -1,6 +1,9 @@
 import { useState } from 'react';
-import { Input, Toast, SidebarMenu } from './index';
+
 import css from './TestPage.module.css';
+import Input from './components/Input/Input';
+import Toast from './components/Toast/Toast';
+import SidebarMenu from './components/SideBar/SideBar';
 
 export const TestPage = () => {
   const [showToast, setShowToast] = useState(true);

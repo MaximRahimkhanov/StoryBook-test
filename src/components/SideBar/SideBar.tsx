@@ -7,8 +7,6 @@ interface SidebarProps {
 }
 
 const SidebarMenu: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
-  // if (!isOpen) return null;
-
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
@@ -37,14 +35,22 @@ const SidebarMenu: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
               Home
             </Link>
           </li>
+
           <li>
-            <Link className={css.link} to="/" onClick={onClose}>
-              Profile
-            </Link>
+            <span className={css.link}>Profile ▼</span>
+            <ul className={css.subMenu}>
+              <li>
+                <Link to="/profile/settings">Settings</Link>
+              </li>
+              <li>
+                <Link to="/profile/security">Security</Link>
+              </li>
+            </ul>
           </li>
+
           <li>
             <Link className={css.link} to="/" onClick={onClose}>
-              Settings
+              Contact
             </Link>
           </li>
         </ul>

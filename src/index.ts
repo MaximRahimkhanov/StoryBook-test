@@ -1,3 +1,3 @@
-export { default as Input } from './components/Input/Input';
-export { default as Toast } from './components/Toast/Toast';
-export { default as SidebarMenu } from './components/SideBar/SideBar';
+export { default as InputStory } from './stories/Input.stories';
+export { default as ToastStory } from './stories/Toast.stories';
+export { default as SidebarMenuStory } from './stories/SideBar.stories';

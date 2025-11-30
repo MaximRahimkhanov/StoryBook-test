@@ -35,6 +35,25 @@
   padding: 0;
 }
 
+.subMenu {
+  margin-left: 15px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.subMenu.open {
+  max-height: 200px;
+  opacity: 1;
+}
+
 .closeBtn {
   position: fixed;
   top: 2px;
